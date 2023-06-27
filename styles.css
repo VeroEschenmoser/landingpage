@@ -1,99 +1,133 @@
-    /* Estilos CSS para dar formato a la página */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-image: url("https://img.freepik.com/foto-gratis/gafas-opticas-retro-primer-plano_23-2148290371.jpg?w=740&t=st=1687569884~exp=1687570484~hmac=b05c2b62965faf58a7523152d3c9dde19e0d34d993fc747ddd4cfc010bdbea50");
-      background-repeat:no-repeat;
-      background-position: center;
-      background-size: cover;
-      
-    }
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
 
-    ul {
-      list-style: none;
-    }
-    .subtitulo{
-      width: 80%;
-      align-self: flex-end;
-      font-size: large;
-      margin-bottom: 50px;
-    }
-    h1 {
-      align-self: center;
-      text-align: center;
-    }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://img.freepik.com/foto-gratis/gafas-opticas-retro-primer-plano_23-2148290371.jpg?w=740&t=st=1687569884~exp=1687570484~hmac=b05c2b62965faf58a7523152d3c9dde19e0d34d993fc747ddd4cfc010bdbea50");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
-    .principal {
-      display: flex;
-      gap:1rem;
-      align-items: end;
-    }
-    label{
-      align-self: flex-start;
-    }
-    form {
-      margin-bottom: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-      max-width: 1000px;
-      min-width: 400px;
-    }
-    button{
-      background-color: #9968e7;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-      width: 50%;
-    }
-    .button {
-      display: flex;
-      justify-content: right;
-    }
-  
-    input[type="text"], input[type="email"] {
-      width: 95%;
-      padding: 10px;
-      margin-bottom: 10px;
-      
-    }
-    input[type="submit"] {
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-      width: 50%;
-    }
-    .sales-image {
-      display: block;
-      margin: 20px auto;
-      max-width: 200px;
-    }
-    .benefits {
-      
-      text-align:right;
-      margin-bottom: 20px;
-      
-    }
-    .social-media {
-      text-align: center;
-      display: flex;
-      justify-content: end;
-      width: 75%;
-    }
-    .social-media img {
-      width: 30px;
-      margin: 0 5px;
-    }
+h1 {
+  text-align: center;
+}
+
+.subtitulo {
+  text-align: center;
+}
+
+.principal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+  width: 50%;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+ 
+}
+
+label {
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.social-media {
+  text-align:center;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-media img {
+  width: 30px;
+  margin: 0 5px;
+}
+.social{
+  display: flex;
+} 
+
+/* Responsive*/
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .subtitulo {
+    font-size: 16px;
+  }
+
+  form {
+    margin-top: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .social-media {
+    padding: 10px;
+  }
+
+  h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .social-media a {
+    display:flex;
+    margin-bottom: 20px;
+    
+  }
+
+  footer {
+    text-align: center;
+    padding: 10px;
+  }
+}
