@@ -65,6 +65,21 @@ input[type="email"] {
   text-decoration: none;
   border-radius: 4px;
 }
+
+.beneficios ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.beneficios {
+  float: right;
+  width: 30%;
+}
+
+.beneficios li {
+  margin-bottom: 10px;
+}
 .social-media {
   text-align:center;
   display: flex;
